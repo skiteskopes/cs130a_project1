@@ -11,7 +11,9 @@ public:
 	int get_kleft_count();   
 	int get_kright_count();   
 	std::string get_kleft_word();  
-	std::string get_kright_word();
+	std::string get_kright_word();   
+	bool kleft_status();   
+	bool kright_status();    
 
 private:
 	std::tuple<std::string, int> kleft;  

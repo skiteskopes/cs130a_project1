@@ -1,6 +1,10 @@
 #include "tst_node.h"  
 #include <iostream>      
 
+TST_node::Tstnode::(){   
+	std::get<1>(this -> kleft) = -1; 	
+	
+}
 void inc_kleft(){   
 	std::get<1>(this -> kleft) += 1;  
 }   
@@ -35,6 +39,35 @@ std::string get_kright_word(){
 	return std::get<0>(this -> kright);    
 }     
 
+void set_right(TST_node * node){  
+	this-> right = node;
+}  
+
+void set_left(TST_node * node){ 
+	this -> left = node; 
+}  
+
+void set_mid(TST_node *Node){  
+	this -> mid = node;  
+}  
+
+bool kright_status(){  
+	if(std::get<1>(this -> kright) == -1){   
+		return false;  
+	}  
+	else{ 
+		return true;   
+	}   
+}  
+
+bool kleft_status(){   
+	if(std::get<1>(this -> kleft)  == -1){   
+		return false; 
+	}  
+	else{ 
+		return true; 
+	}  
+}
 	
 
 

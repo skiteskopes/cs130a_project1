@@ -52,10 +52,10 @@ TST_node * insert(word, node = this-> head) {
 				node.set_mid(insert(node.get_mid(), word));     
 		}   
 		if(word.compare(*node.get_kright_word()) < 0){   
-			node.set_mid(insert(node.get_right(), word));  
+			node.set_right(insert(node.get_right(), word));  
 		}  
 		if(word.compare(*node.get_kleft_word()) > 0){  
-			node.set_mid(insert(node.get_left, word));  
+			node.set_left(insert(node.get_left, word));  
 		
 			
 	}   

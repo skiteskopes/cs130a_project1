@@ -13,7 +13,10 @@ public:
 	std::string get_kleft_word();  
 	std::string get_kright_word();   
 	bool kleft_status();   
-	bool kright_status();    
+	bool kright_status();       
+	void set_mid(); 
+	void set_right(); 
+	void set_left();     
 
 private:
 	std::tuple<std::string, int> kleft;  
